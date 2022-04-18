@@ -24,6 +24,7 @@ MONGO_DB_USERNAME = 'storm'
 MONGO_DB_PASSWORD = '98765432.zx'
 ITEM_PIPELINES = {
     'Scrapy_YuLe.pipelines.ScrapyYuLePipeline': 300,
+    'crawlab.pipelines.CrawlabMongoPipeline': 888
 }
 
 

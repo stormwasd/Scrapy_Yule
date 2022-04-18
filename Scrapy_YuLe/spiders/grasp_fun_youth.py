@@ -27,7 +27,7 @@ class GraspFunYouthSpider(scrapy.Spider):
     }
 
     def start_requests(self):
-        for i in range(1, 10):
+        for i in range(1, 2):
             url = f'http://fun.youth.cn/gnzx/index_{i}.htm'
             req = scrapy.Request(url, callback=self.parse, dont_filter=True)
             yield req
